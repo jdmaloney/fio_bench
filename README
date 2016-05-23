@@ -1,0 +1,12 @@
+*** Documentation for FIO Bench ***
+Written By: JD Maloney
+Storage Engineer | NCSA (National Center for Supercomputing Applications)
+
+~~ device_grabber.sh ~~
+Gets list of all devices outside of the boot device and echos them in a format that works for the FIO config file before the start of the FIO run
+
+~~ fio_run.sh ~~
+Generates config file and runs FIO script, looping across multiple tests.  Varies block size, test, and total data written for each test.  Modifications to all three of the parameters are easily done in the beginning of the script.
+
+~~ fio ~~
+Contains a compiled version of the latest version of FIO, path to fio bin file is referenced in the fio_run.sh file.
